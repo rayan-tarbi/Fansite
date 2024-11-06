@@ -11,16 +11,13 @@
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a>accueil</a> </li>
-                <li><a>biographie</a> </li>
-                <li><a>galerie d'images</a> </li>
-                <li><a>discographie</a> </li>
-                <li><a>medias</a> </li>
-                <li><a>liens officiels</a> </li>
-                <li><a>fansite 1</a> </li>
-                <li><a>fansite 2</a> </li>
-            </ul>
+            <a href="home.html">Accueil</a>
+            <a href="fansite1.html">Fansite1</a>
+            <a href="#about">À propos</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#discography">Discographie</a>
+            <a href="fansite2.html">Fansite2</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
         <main>
@@ -28,16 +25,20 @@
             <div class="central-element">
 
                 <div class="titre">
-                    <h1>Guizmo - Cyril_Celestin</h1>
+                    <!-- 
+                    center & retravailler l'image
+                    c'est moche
+                     -->
+                    <h1>Guizmo - Cyril Célestin</h1>
                 </div>
 
                 <section>
                     <!-- Chopper une police d'écriture google fonts ou autre -->
                     <h2>Biographie</h2>
-                    <div>
-                        <img src="./assets/guizmo_huma.png" alt="guizmo a la fete de l'huma">
+                    <div class="img-bio">
+                        <img src="./assets/guizmo/guizmo_huma.png" alt="guizmo a la fete de l'huma">
                     </div>
-                    <p>Cyril Celestin, dit Guizmo ou seulement Guiz, est auteur-compositeur-interprète 
+                    <p>Cyril Célestin, dit Guizmo ou seulement Guiz, est auteur-compositeur-interprète 
                     et musicien français, né le 11 avril 1972 à Paris dans le 14e arrondissement. 
                     Guitariste et chanteur du groupe Tryo, il fait aussi partie du groupe Collectif 13.</p>
                     <p>Né à Paris, il grandit à Cachan en cité HLM. À partir de 14 ans, il hésite  entre 
@@ -47,10 +48,7 @@
                     <p>En 1995, il est objecteur de conscience à la MJC de Fresnes et y rencontre Christophe Mali 
                     qui lui propose, ainsi qu'à Manu, un rôle dans sa comédie musicale « Histoire de piano » 
                     coécrite avec Maïa Rubinstein. Cette rencontre donnera naissance au groupe Tryo. 
-                    En 2005, le groupe Tryo fait une pause, que Guizmo met à profit pour participer à d'autres projets 
-                    qui lui tiennent à cœur. Il participe au collectif Desert Rebel, un projet de rencontre culturelle 
-                    musicale autour du guitariste touareg Abdallah ag Oumbadougou, et part au Niger en mars 
-                    pour participer au tournage et à l'enregistrement de ce projet de culture équitable. 
+                    En 2005, le groupe Tryo fait une pause, que Guizmo met à profit pour participer à d'autres projets qui lui tiennent à cœur. Il participe au collectif Desert Rebel, un projet de rencontre culturelle musicale autour du guitariste touareg Abdallah ag Oumbadougou, et part au Niger en mars pour participer au tournage et à l'enregistrement de ce projet de culture équitable. 
                     Il participe aussi au groupe Pause en tant que chanteur, auteur et compositeur.</p>
                     <p>Au printemps 2012, il participe à la tournée du collectif 13, formé à l'initiative du duo 
                     du Le Pied de la Pompe, avec la participation de Zeitoun de La Rue Kétanou et d'Alee entre autres.
@@ -69,18 +67,18 @@
                     1fr 1fr écrans moins larges
                     .............................. 
                     -->
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
-                    <img src="./assets/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/guizmo_Pause.png" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/Brest.jpg" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/cabaret_sauvage.jpg" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/fete_huma.jpg" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/groupe.png" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/france_bleu.png" height="400px" width="600px" class="img-hover">
+                    <img src="./assets/guizmo/delire.png" height="400px" width="600px" class="img-hover">
+
                 </section>
 
                 <h2>Discographie</h2>
-                <section class="discographie">
+                <section class="discographie" id="discographie">
                     <div>
                         <h3>Albums du groupe Tryo</h3>
                         <div class="disco-img">
@@ -114,18 +112,21 @@
                     </div>
     
                     <!-- projets solos / SANS tryo -->
-                    <div>
+                    <div >
                         <h3>Groupe Pause</h3>
-                        <div>
-                            <img src="./assets/photos_albums/pause.jpg" alt="image de l'album Pause" width="500px" height="500px">
+                        <div class="disco-img">
+                            <img src="./assets/photos_albums/pause.jpg" alt="image de l'album Pause" width="500px" height="500px" class="img-hover">
                             <p><a href="https://fr.wikipedia.org/wiki/Pause_(groupe)#Discographie">PAUSE</a></p>
                         </div>
                     </div>
     
-                    <div>
+                    <div >
                         <h3>Desert Rebel</h3>
-                        <img src="./assets/photos_albums/desert_rebel.jpg" alt="image de l'album Desert Rebel" width="500px" height="500px">
-                        <p><a href="https://www.discogs.com/artist/1054758-Desert-Rebel">Desert Rebel</a></p>
+                        <div class="disco-img">
+                            <img src="./assets/photos_albums/desert_rebel.jpg" alt="image de l'album Desert Rebel" width="500px" height="500px" class="img-hover">
+                            <p><a href="https://www.discogs.com/artist/1054758-Desert-Rebel">Desert Rebel</a></p>
+                        </div>
+
                     </div>
                 </section>
 
@@ -175,7 +176,6 @@
                  <div class="icones">
                     <a href="https://open.spotify.com/intl-fr/artist/4ZP3CHz28XWVLGiaVVWuLj"><img src="./assets/icones/2024_Spotify_Logo.png" alt="logo spotify"></a>
                  </div>
- 
              </section>
 
             </div>
