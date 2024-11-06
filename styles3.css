@@ -56,7 +56,6 @@ header h1:hover {
 
 /* Barre de navigation */
 nav {
-    background-color: #ffffff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     width: 100%;
     padding: 1rem 0;
