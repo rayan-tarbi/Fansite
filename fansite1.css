@@ -104,3 +104,17 @@ p{
 .titre {
     margin: 25px;
 }
+
+.bottom-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icones {
+    display: flex;
+}
+
+.icones > a > img  {
+    width:50px;
+    height: 50px;
+}
