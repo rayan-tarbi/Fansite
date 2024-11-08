@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #000000; /* Rouge reggae */
-    --secondary-color: #c85050; /* Vert nature */
-    --accent-color: #df5353; /* Jaune énergique */
+    --primary-color: #000000;
+    --secondary-color: #c85050;
+    --accent-color: #df5353;
     --gradient-start: #fc191d;
     --gradient-end: #fefefe;
 }
@@ -79,6 +79,12 @@ nav a {
 }
 /* Fin de la navbar */
 
+iframe {
+    width: 750px;
+     height: 350px;
+}
+
+
 /* Les images  */
 
 .galerie_images {
@@ -90,6 +96,9 @@ nav a {
 .galerie_images > img, .video {
     margin-top: 30px;
     margin-bottom: 30px;
+    height: 400px;
+    width: 600px;
+    border-radius: 15px;
 }
 
 .img-hover {
@@ -114,9 +123,21 @@ nav a {
 
 .disco-img > img {
     border-radius: 15px;
+    width: 500px;
+    height: 500px;
 }
 
 /* Fin des images  */
+
+.biography-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.biography-text > p {
+    width: 80%;
+}
 
 .discographie, .video-container {
     display: flex;
@@ -147,3 +168,53 @@ nav a {
     height: 50px;
 }
 
+
+
+@media only screen and (max-width: 650px) {
+
+    p, h2 {
+        margin: 10px;
+    }
+
+    .central-element {
+        width: 100%;
+    }
+
+    section {
+        margin: 0px;
+    }
+
+    .galerie_images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .galerie_images > img, .video {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 300px;
+        width: 450px;
+    }
+
+    .disco-img > img {
+        border-radius: 15px;
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .biography-text > p {
+       width: 95%;
+    }
+
+    .video-container > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .titre {
+        margin: 10px;
+    }
+
+}
