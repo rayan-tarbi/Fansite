@@ -170,7 +170,17 @@ iframe {
 
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
+
+    nav {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     p, h2 {
         margin: 10px;
@@ -185,9 +195,9 @@ iframe {
     }
 
     .galerie_images {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .galerie_images > img, .video {
@@ -203,7 +213,6 @@ iframe {
         height: 400px;
     }
 
-
     .biography-text > p {
        width: 95%;
     }
@@ -216,5 +225,19 @@ iframe {
     .titre {
         margin: 10px;
     }
+
+    iframe {
+        width: 450px;
+         height: 250px;
+    }
+
+    .img-bio > img {
+        border: 2px solid hotpink;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+
 
 }
