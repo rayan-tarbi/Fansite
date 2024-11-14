@@ -38,9 +38,10 @@ nav a {
 
 h1,h2{
     color: cornflowerblue;
-}
-h1, h2{ 
     font-size: 35px;
+}
+p{ 
+    font-size: 25px;
 }
 div{
     font-size: large;
@@ -51,5 +52,11 @@ header{
 div{
     
     font-size: x-large;
+}
+h3{
+    color: rgb(211, 205, 255);
+}
+h1{
+    text-align: left;
 }
 
