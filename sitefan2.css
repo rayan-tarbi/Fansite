@@ -32,9 +32,10 @@ body {
 header {
     background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     color: white;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     font-family: 'Pacifico', cursive;
     animation: headerAnimation 10s ease infinite;
 }
@@ -43,6 +44,16 @@ header {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: translateY(-10px);
 }
 
 /* Navigation */
