@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+:root {
+    --primary-color: #0D3B66; /* Bleu profond */
+    --secondary-color: #F4D35E; /* Jaune vif */
+    --accent-color: #EE964B; /* Orange vibrant */
+    --background-color: #F0F3BD; /* Vert clair */
+    --text-color: #333333;
+    --gradient-start: #F4D35E;
+    --gradient-end: #0D3B66;
+}
+
+/* Corps */
+body {
+    background: linear-gradient(135deg, var(--background-color) 0%, #FFFFFF 100%);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Pacifico', cursive;
+    animation: headerAnimation 10s ease infinite;
+}
+
+@keyframes headerAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: translateY(-10px);
+}
+
+/* Barre de navigation */
+
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Sections principales */
+section {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: 'Pacifico', cursive;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Conteneur de la Galerie */
+.gallery-container {
+    display: flex;
+    flex-direction: column; /* Place les items en colonne */
+    align-items: center; /* Centre les items horizontalement */
+    gap: 2rem; /* Espace entre les éléments */
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+/* Style de chaque Item de la Galerie */
+.gallery-item {
+    width: 50%;
+    max-width: 300  px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style des Images */
+.gallery-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); 
+}
+
+/* Style des Légendes */
+.gallery-item p {
+    font-weight: bold;
+    color: #333333;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* Discographie */
+#discography ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#discography ul li {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    text-align: center;
+}
+
+#discography ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#discography ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+#discography ul li:hover img {
+    transform: scale(1.1) rotate(8deg);
+}
+
+/* Contact */
+#contact a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+#contact a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+#contact a:hover::after {
+    width: 100%;
+}
+
+/* Pied de page */
+footer {
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.social-links {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 15px;              
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
