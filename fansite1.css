@@ -247,6 +247,11 @@ footer p {
 /* entre 551 et + grand  */
 @media only screen and (min-width: 551px) and (max-width: 1000px) {
 
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .img-bio > img {
         margin-left: 10px;
         margin-top: 10px;
